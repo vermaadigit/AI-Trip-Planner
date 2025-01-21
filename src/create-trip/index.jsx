@@ -4,6 +4,8 @@ import { Input } from '../components/ui/input'
 import { SelectBudgetOptions } from '../constants/options'
 import { SelectTravelesList } from '../constants/options'
 import { Button } from '../components/ui/button'
+import { toast } from "sonner"
+
 
 function  CreateTrip () {
   const [place, setPlace] = useState();
@@ -23,7 +25,8 @@ function  CreateTrip () {
   },[formData])
 
   const OnGenerateTrip = () => {
-    if(formData?.noOfDays>5){
+    if(formData?.noOfDays>5 && !formData?.location || !formData?.budget || !formData?.people){
+      toast("Please fill all Details")
       return ;
     }
     console.log(formData);
