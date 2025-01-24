@@ -13,6 +13,8 @@ function Hero() {
         <Button> Get Started, It's Free </Button>
       </Link>
       
+      <img src='/Landing.png' className='-mt-[35px]'/>
+      
     </div>
   )
 }
