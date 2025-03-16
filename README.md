@@ -84,4 +84,5 @@ To use the Google Maps API in your applications, follow the steps below to creat
 
 1. Although the documentation mentions that without restriction , the API key will work everywhere, that is not the case for http requests.
 2. Add a restriction and mention your localhost along with your port for it to start working on local , and save and continue
+   
    <img width="694" alt="Screenshot 2024-09-22 at 10 06 44 AM" src="https://github.com/user-attachments/assets/3acfdf47-4b1d-480f-8172-0fbfa1c39f02">
